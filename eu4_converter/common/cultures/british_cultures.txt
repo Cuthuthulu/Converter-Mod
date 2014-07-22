@@ -1,0 +1,6 @@
+british = {
+	anglo_saxon = {
+		primary = AGS
+		dynasty_names = $anglo_saxon$
+	}
+}

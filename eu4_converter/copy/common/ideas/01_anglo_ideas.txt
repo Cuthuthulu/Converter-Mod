@@ -1,0 +1,43 @@
+anglo_ideas = {
+	start = {
+	 stability_cost_modifier = -0.10
+	}
+
+	bonus = {
+		land_morale = 0.10
+	}
+
+	trigger = {
+		AND = {
+			NOT = { is_colonial_nation = yes }
+			 OR = {
+			primary_culture = anglo_saxon
+			}
+		}
+	}
+	free = yes		#will be added at load.
+
+	anglecynn = { 
+	 core_creation = -0.10
+	}
+	beowulf = { 
+	   army_tradition_decay = -0.01
+	}
+	great_navy = {
+	  heavy_ship_power = 0.05
+	  naval_forcelimit_modifier = 0.25
+	}
+	northumbrian_golden_age = {
+	 idea_cost = -0.05
+	 technology_cost = -0.05
+	}
+	brothers_in_arms = {
+	 infantry_power = 0.15
+	}
+	anglo_saxon_mission = {
+	 global_missionary_strength = 0.01
+	}
+	sceattas = {
+	 global_trade_income_modifier = 0.1
+	}
+}

@@ -1,0 +1,23 @@
+country_decisions = {
+
+	habsburg_nation = {
+		major = yes
+		potential = {
+			NOT = { exists = HAB }
+			primary_culture = austrian
+		}
+		allow = {
+			has_regency = no
+			is_at_war = no
+		}
+		effect = {
+			change_tag = HAB
+			add_prestige = 10
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+}

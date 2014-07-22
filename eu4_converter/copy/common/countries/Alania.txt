@@ -1,0 +1,125 @@
+# Alania
+graphical_culture = westerngfx
+color = { 155 110 48 }
+
+historical_idea_groups = {
+	defensive_ideas
+	offensive_ideas
+	trade_ideas
+	spy_ideas
+	diplomatic_ideas
+	economic_ideas
+	religious_ideas
+	quantity_ideas
+}
+
+historical_units = {
+	eastern_medieval_infantry
+	eastern_knights
+	slavic_stradioti
+	eastern_militia
+	muscovite_musketeer
+	muscovite_caracolle
+	muscovite_soldaty
+	muscovite_cossack
+	russian_petrine
+	russian_lancer
+	russian_green_coat
+	russian_cuirassier
+	eastern_skirmisher
+	eastern_uhlan
+	eastern_carabinier
+	russian_mass
+}
+
+leader_names = {
+
+	"Itaz" "Levan" "Saros" "Atsyrukhs" "Ælbeg" "Æmbalan" "Aghsartan" "Alatey" "Akhsar" "Anbal" 
+	"Anbazuk" "Aravat" "Arsen" "Askhkadar" "Ashot" "Aslan" "Aspar" "Athom" "Balambar" "Balsag" 
+	"Barlah" "Bæqætar" "Basil" "Bazuk" "Beler" "Ber" "Biræg" "Boz-Uruz" "Buürgur" "Buriberdi" 
+	"Burikhan" "Candak" "Chelakhsartag" "Davit" "Djadaron" "Durgulel" "Dzæræs" "Gætæg" "Georgy" "Girgon" 
+	"Gokhar" "Gubaz" "Guram" "Hasqar" "Huddan" "Istor" "Iveri" "Kandak" "Kandz" "Kavtia" 
+	"Kaur" "Khankhusy" "Khætag" "Konstantin" "Kubal" "Kuddana" "Kul" "Kuluk" "Lak" "Pulad" 
+	"Respendial" "Rosmag" "Safrak" "Sakhir" "Sangipan" "Sathis" "Savkudz" "Soslan" "Suarn" "Syrdon" 
+	"Taymuraz" "Taus" "Totraz" "Urdure" "Uruzma" "Uturku" "Yasynya" "Zaur" }
+
+monarch_names = {
+	"Itaz #1" = 8
+	"Levan #0" = 8
+	"Saros #0" = 8
+	"Atsyrukhs #0" = -9
+	"Ælbeg #0" = 0
+	"Æmbalan #0" = 0
+	"Aghsartan #0" = 0
+	"Alatey #0" = 0
+	"Akhsar #0" = 0
+	"Anbal #0" = 0
+	"Anbazuk #0" = 0
+	"Aravat #0" = 0
+	"Arsen #0" = 0
+	"Askhkadar #0" = 0
+	"Ashot #0" = 0
+	"Aslan #0" = 0
+	"Aspar #0" = 0
+	"Athom #0" = 0
+	"Balambar #0" = 0
+	"Balsag #0" = 0
+	"Barlah #0" = 0
+	"Bæqætar #0" = 0
+	"Basil #0" = 0
+	"Bazuk #0" = 0
+	"Beler #0" = 0
+	"Ber #0" = 0
+	"Biræg #0" = 0
+	"Boz-Uruz #0" = 0
+	"Buürgur #0" = 0
+	"Buriberdi #0" = 0
+	"Burikhan #0" = 0
+	"Candak #0" = 0
+	"Chelakhsartag #0" = 0
+	"Davit #0" = 0
+	"Djadaron #0" = 0
+	"Durgulel #0" = 0
+	"Dzæræs #0" = 0
+	"Gætæg #0" = 0
+	"Georgy #0" = 0
+	"Girgon #0" = 0
+	"Gokhar #0" = 0
+	"Gubaz #0" = 0
+	"Guram #0" = 0
+	"Hasqar #0" = 0
+	"Huddan #0" = 0
+	"Istor #0" = 0
+	"Iveri #0" = 0
+	"Kandak #0" = 0
+	"Kandz #0" = 0
+	"Kavtia #0" = 0
+	"Kaur #0" = 0
+	"Khankhusy #0" = 0
+	"Khætag #0" = 0
+	"Konstantin #0" = 0
+	"Kubal #0" = 0
+	"Kuddana #0" = 0
+	"Kul #0" = 0
+	"Kuluk #0" = 0
+	"Lak #0" = 0
+	"Pulad #0" = 0
+	"Respendial #0" = 0
+	"Rosmag #0" = 0
+	"Safrak #0" = 0
+	"Sakhir #0" = 0
+	"Sangipan #0" = 0
+	"Sathis #0" = 0
+	"Savkudz #0" = 0
+	"Soslan #0" = 0
+	"Suarn #0" = 0
+	"Syrdon #0" = 0
+	"Taymuraz #0" = 0
+	"Taus #0" = 0
+	"Totraz #0" = 0
+	"Urdure #0" = 0
+	"Uruzma #0" = 0
+	"Uturku #0" = 0
+	"Yasynya #0" = 0
+	"Zaur #0" = 0
+}

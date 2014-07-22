@@ -1,0 +1,445 @@
+namespace = keytiumck
+
+country_event = {
+	Event_id = keytiumck.1
+	title = "EVTNAMEkeytiumck1"
+	desc = "EVTDESCkeytiumck1"
+	fire_only_once = yes	
+	trigger = {
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	immediate = {
+		set_country_flag = culture_split
+		#Break up culture events
+		#Turkish/Turmeni divide
+		#Turkmeni countries
+		every_country = {
+			limit = {
+				capital_scope = {
+					region = central_asia
+				}
+				OR = {
+					dominant_culture = turkish
+					primary_culture = turkish
+				}
+			}
+			every_owned_province = {
+				limit = {
+					culture = turkish
+				}
+				change_culture = turkmeni
+			}
+			if = {
+				limit = {
+					primary_culture = turkish
+				}
+				change_primary_culture = turkmeni
+			}
+		}
+		#Turkmeni minorities
+		every_country = {
+			limit = {
+				NOT = {
+					OR = {
+						dominant_culture = turkish
+						primary_culture = turkish
+					}
+				}
+			}
+			every_owned_province = {
+				if = {
+					limit = {
+						culture = turkish
+						region = central_asia
+					}
+					change_culture = turkmeni
+				}
+			}
+		}
+		#Italian
+		every_province = {
+			limit = {
+				culture = italian
+				OR = {
+					is_core = PAP
+					is_core = URB
+				}
+			}
+			change_culture = umbrian
+		}
+		#Lombard
+		every_province = {
+			limit = {
+				culture = italian
+				OR = {
+					is_core = MOD
+					is_core = MLO
+					is_core = VEN
+					is_core = SIE
+					is_core = GEN
+					is_core = LOM
+					region = lombardia
+					region = german_region
+					region = occitania
+					region =  helvetia
+				}
+			}
+			change_culture = lombard
+		}
+		#Sicilian
+		every_province = {
+			limit = {
+				culture = italian
+				OR = {
+					is_core = NAP
+					is_core = SIC
+					region = two_sicilies
+				}
+			}
+			change_culture = sicilian
+		}
+		#umbrian second wave
+		every_province = {
+	        limit = {
+	        culture = italian
+			region = italian_region
+			}
+			change_culture = umbrian
+		}
+		#French
+		#wallonian
+		every_province = {
+			limit = {
+				culture = cosmopolitan_french
+				OR = {
+					region = the_low_countries
+				}
+			}
+			change_culture = wallonian
+		}
+		#burgundian
+		every_province = {
+			limit = {
+				culture = cosmopolitan_french
+				OR = {
+					is_core = BUR
+					region = helvetia
+					region = lotharingia
+				}
+			}
+			change_culture = burgundian
+		}
+		#aquitaine
+		every_province = {
+			limit = {
+				culture = cosmopolitan_french
+				OR = {
+					region = aquitania
+				}
+			}
+			change_culture = aquitaine
+		}
+		#German
+		#hessian
+		every_province = {
+			limit = {
+				culture = german
+				OR = {
+					is_core = HES
+					province_id = 81
+					province_id = 82
+					province_id = 83
+					province_id = 1762
+				}
+			}
+			change_culture = hessian
+		}
+		#rheinlaender 
+		every_province = {
+			limit = {
+				culture = german
+				OR = {
+					is_core = SWI
+					is_core = TRI
+					is_core = BAD
+					region = helvetia
+					region = lotharingia
+				}
+			}
+			change_culture = rheinlaender
+		}
+		#austrian 
+		every_province = {
+			limit = {
+				culture = german
+				OR = {
+					is_core = HAB
+					is_core = STY
+					region = austrian_region
+					region = hungarian_region
+					region = western_balkans
+				}
+			}
+			change_culture = austrian
+		}
+		#saxon
+		every_province = {
+			limit = {
+				culture = german
+				OR = {
+					is_core = SAX
+				}
+			}
+			change_culture = saxon
+		}
+		#bavarian	
+		every_province = {
+			limit = {
+				culture = german
+				OR = {
+					is_core = BAV
+				}
+			}
+			change_culture = bavarian
+		}
+		#hannovrian
+		every_province = {
+			limit = {
+				culture = german
+				OR = {
+					region = westphalian_region
+				}
+			}
+			change_culture = hannoverian
+		}
+		#russian
+		#ruthenian
+	    every_province = {
+			limit = {
+				culture = russian
+				OR = {
+					region = ukrainian_region
+					region = malopolska
+					region = hungarian_region
+					is_core = RUT
+				}
+			}
+			change_culture = ruthenian
+		}
+		#byelorussian
+	   	every_province = {
+			limit = {
+				culture = russian
+				OR = {
+					region = belarus
+				}
+			}
+			change_culture = byelorussian
+		}
+		#Italian/German/French primary culture fixing
+		every_country = {
+			limit = {
+				primary_culture = russian
+				capital_scope = {
+					culture_group = east_slavic
+				}
+			}
+			change_primary_culture = capital
+		}
+		every_country = {
+			limit = {
+				primary_culture = german
+				capital_scope = {
+					culture_group = germanic
+				}
+			}
+			change_primary_culture = capital
+		}
+		every_country = {
+			limit = {
+				primary_culture = cosmopolitan_french
+				capital_scope = {
+						culture_group = french
+				}
+			}
+			change_primary_culture = capital
+		}
+		every_country = {
+			limit = {
+				primary_culture = italian
+				capital_scope = {
+					culture_group = latin
+				}
+			}
+			change_primary_culture = capital
+		}
+		#change generic culture to specific primary culture.
+		every_country = {
+			limit = {
+				OR = {
+					primary_culture = lombard
+					primary_culture = sicilian
+					primary_culture = umbrian
+				}
+			}
+			every_owned_province = {
+				limit = {
+					culture = italian
+				}
+				change_culture = capital
+			}
+		}
+		every_country = {
+			limit = {
+				OR = {
+					primary_culture = wallonian
+					primary_culture = burgundian
+					primary_culture = aquitaine
+				}
+			}
+			every_owned_province = {
+				limit = {
+					culture = cosmopolitan_french
+				}
+				change_culture = capital
+			}
+		}
+		every_country = {
+			limit = {
+				NOT = { region = german_region }
+				OR = {
+					primary_culture = hessian
+					primary_culture = rheinlaender
+					primary_culture = austrian
+					primary_culture = bavarian
+					primary_culture = saxon
+					primary_culture = hannoverian
+				}
+			}
+			every_owned_province = {
+				limit = {
+					culture = german
+				}
+				change_culture = capital
+			}
+		}
+		every_province = {
+			limit = {
+				culture = german
+				any_neighbor_province = { culture = bavarian}
+			}
+			change_culture = bavarian
+		}
+		every_province = {
+			limit = {
+				culture = german
+				any_neighbor_province = { culture = saxon}
+				}
+			change_culture = saxon
+		}
+		every_province = {
+			limit = {
+				culture = german
+				any_neighbor_province = { culture = hannoverian}
+			}
+			change_culture = hannoverian
+		}
+		every_province = {
+			limit = {
+				culture = german
+				any_neighbor_province = { culture = hessian}
+			}
+			change_culture = hessian
+		}
+		every_province = {
+			limit = {
+				culture = german
+				any_neighbor_province = { culture = austrian}
+			}
+			change_culture = austrian
+		}
+		every_province = {
+			limit = {
+				culture = german
+				any_neighbor_province = { culture = rheinlaender}
+			}
+			change_culture = rheinlaender
+		}
+		every_province = {
+			limit = {
+				culture = italian
+				any_neighbor_province = { culture = lombard}
+			}
+			change_culture = lombard
+		}
+		every_province = {
+			limit = {
+				culture = italian
+				any_neighbor_province = { culture = sicilian }
+			}
+			change_culture = sicilian
+		}
+		every_province = {
+			limit = {
+				culture = italian
+				any_neighbor_province = { culture = umbrian }
+			}
+			change_culture = umbrian
+		}
+		every_country = {
+			limit = {
+				OR = {
+					primary_culture = german
+					primary_culture = italian
+				}
+				capital_scope = {
+					OR = {
+						culture_group = germanic
+						culture_group = latin
+					}
+				}
+			}
+			change_primary_culture = capital
+		}
+		every_country = {
+			limit = {
+				OR = {
+					primary_culture = lombard
+					primary_culture = sicilian
+					primary_culture = umbrian
+				}
+			}
+			every_owned_province = {
+				limit = {
+					culture = italian
+				}
+				change_culture = capital
+			}
+		}
+		every_country = {
+			limit = {
+				OR = {
+					primary_culture = hessian
+					primary_culture = rheinlaender
+					primary_culture = austrian
+					primary_culture = bavarian
+					primary_culture = saxon
+					primary_culture = hannoverian
+				}
+			}
+			every_owned_province = {
+				limit = {
+					culture = german
+				}
+				change_culture = capital
+			}
+		}
+	}
+	option = {
+		name = "Keytiumck1.1a"
+	}
+}
+}

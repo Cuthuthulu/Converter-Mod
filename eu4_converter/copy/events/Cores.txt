@@ -1,0 +1,693 @@
+country_event = {
+Event_id = keytiumck.3
+title = "EVTNAMEkeytiumck3"
+desc = "EVTDESCkeytiumck3"
+fire_only_once = yes
+trigger = {
+has_country_flag = culture_split
+ai = yes
+}
+mean_time_to_happen = {
+days = 1
+}
+immediate = {
+every_country = {
+every_province = {
+limit = {
+is_core = PREV
+NOT = { culture = PREV }
+NOT = { owned_by = PREV }
+}
+Remove_core = PREV
+}
+}
+every_country = {
+limit = {
+num_of_cities = 15
+}
+every_owned_province = {
+limit = { has_owner_culture = no }
+IF = {
+limit = { culture = burgundian BUR = { exists = yes }}
+IF = { limit = { BUR = {primary_culture = burgundian}} every_province = { limit = { any_neighbor_province = { owned_by = BUR}} add_core = BUR}}
+IF = { limit = { NOT = {BUR = {primary_culture = burgundian}} LOR = { exists = no }} add_core = LOR }
+}
+IF = { limit = { culture = burgundian BUR = { exists = no}} add_core = BUR }
+
+IF = {
+limit = { culture = occitain AUV = { exists = yes }}
+IF = { limit = { AUV = {primary_culture = occitain}} every_province = { limit = { any_neighbor_province = { owned_by = AUV}} add_core = AUV}}
+}
+IF = { limit = { culture = occitain AUV = { exists = no}} add_core = AUV }
+
+IF = {
+limit = { culture = pommeranian POM = { exists = yes }}
+IF = { limit = { POM = {primary_culture = pommeranian}} every_province = { limit = { any_neighbor_province = { owned_by = POM}} add_core = POM}}
+IF = { limit = { NOT = {POM = {primary_culture = pommeranian}} MKL = { exists = no }} add_core = MKL }
+}
+IF = { limit = { culture = pommeranian POM = { exists = no}} add_core = POM }
+
+IF = {
+limit = { culture = czech BOH = { exists = yes }}
+IF = { limit = { BOH = {primary_culture = czech}} every_province = { limit = { any_neighbor_province = { owned_by = BOH}} add_core = BOH}}
+IF = { limit = { NOT = {BOH = {primary_culture = czech}} SIL = { exists = no }} add_core = SIL }
+}
+IF = { limit = { culture = czech BOH = { exists = no}} add_core = BOH }
+
+IF = {
+limit = { culture = polish POL = { exists = yes }}
+IF = { limit = { POL = {primary_culture = polish}} every_province = { limit = { any_neighbor_province = { owned_by = POL}} add_core = POL}}
+IF = { limit = { NOT = {POL = {primary_culture = polish}} MAZ = { exists = no }} add_core = MAZ }
+}
+IF = { limit = { culture = polish POL = { exists = no}} add_core = POL }
+
+IF = {
+limit = { culture = prussian PRU = { exists = yes }}
+IF = { limit = { PRU = {primary_culture = prussian}} every_province = { limit = { any_neighbor_province = { owned_by = PRU}} add_core = PRU}}
+}
+IF = { limit = { culture = prussian PRU = { exists = no}} add_core = PRU }
+
+IF = {
+limit = { culture = hannoverian HAN = { exists = yes }}
+IF = { limit = { HAN = {primary_culture = hannoverian}} every_province = { limit = { any_neighbor_province = { owned_by = HAN}} add_core = HAN}}
+IF = { limit = { NOT = {HAN = {primary_culture = hannoverian}} BRU = { exists = no }} add_core = BRU }
+}
+IF = { limit = { culture = hannoverian HAN = { exists = no}} add_core = HAN }
+
+IF = {
+limit = { culture = hessian HES = { exists = yes }}
+IF = { limit = { HES = {primary_culture = hessian}} every_province = { limit = { any_neighbor_province = { owned_by = HES}} add_core = HES}}
+}
+IF = { limit = { culture = hessian HES = { exists = no}} add_core = HES }
+
+IF = {
+limit = { culture = saxon SAX = { exists = yes }}
+IF = { limit = { SAX = {primary_culture = saxon}} every_province = { limit = { any_neighbor_province = { owned_by = SAX}} add_core = SAX}}
+IF = { limit = { NOT = {SAX = {primary_culture = saxon}} THU = { exists = no }} add_core = THU }
+}
+IF = { limit = { culture = saxon SAX = { exists = no}} add_core = SAX }
+
+IF = {
+limit = { culture = bavarian BAV = { exists = yes }}
+IF = { limit = { BAV = {primary_culture = bavarian}} every_province = { limit = { any_neighbor_province = { owned_by = BAV}} add_core = BAV}}
+IF = { limit = { NOT = {BAV = {primary_culture = bavarian}} ULM = { exists = no }} add_core = ULM }
+}
+IF = { limit = { culture = bavarian BAV = { exists = no}} add_core = BAV }
+
+IF = {
+limit = { culture = austrian HAB = { exists = yes }}
+IF = { limit = { HAB = {primary_culture = austrian}} every_province = { limit = { any_neighbor_province = { owned_by = HAB}} add_core = HAB}}
+IF = { limit = { NOT = {HAB = {primary_culture = austrian}} STY = { exists = no }} add_core = STY }
+}
+IF = { limit = { culture = austrian HAB = { exists = no}} add_core = HAB }
+
+IF = {
+limit = { culture = dutch HOL = { exists = yes }}
+IF = { limit = { HOL = {primary_culture = dutch}} every_province = { limit = { any_neighbor_province = { owned_by = HOL}} add_core = HOL}}
+IF = { limit = { NOT = {HOL = {primary_culture = dutch}} GEL = { exists = no }} add_core = GEL }
+}
+IF = { limit = { culture = dutch HOL = { exists = no}} add_core = HOL }
+
+IF = {
+limit = { culture = swedish SWE = { exists = yes }}
+IF = { limit = { SWE = {primary_culture = swedish}} every_province = { limit = { any_neighbor_province = { owned_by = SWE}} add_core = SWE}}
+IF = { limit = { NOT = {SWE = {primary_culture = swedish}} GOT = { exists = no }} add_core = GOT }
+}
+IF = { limit = { culture = swedish SWE = { exists = no}} add_core = SWE }
+
+IF = {
+limit = { culture = danish DAN = { exists = yes }}
+IF = { limit = { DAN = {primary_culture = danish}} every_province = { limit = { any_neighbor_province = { owned_by = DAN}} add_core = DAN}}
+}
+IF = { limit = { culture = danish DAN = { exists = no}} add_core = DAN }
+
+IF = {
+limit = { culture = norwegian NOR = { exists = yes }}
+IF = { limit = { NOR = {primary_culture = norwegian}} every_province = { limit = { any_neighbor_province = { owned_by = NOR}} add_core = NOR}}
+}
+IF = { limit = { culture = norwegian NOR = { exists = no}} add_core = NOR }
+
+IF = {
+limit = { culture = english ENG = { exists = yes }}
+IF = { limit = { ENG = {primary_culture = english}} every_province = { limit = { any_neighbor_province = { owned_by = ENG}} add_core = ENG}}
+IF = { limit = { NOT = {ENG = {primary_culture = english}} LAN = { exists = no }} add_core = LAN }
+}
+IF = { limit = { culture = english ENG = { exists = no}} add_core = ENG }
+
+IF = {
+limit = { culture = scottish SCO = { exists = yes }}
+IF = { limit = { SCO = {primary_culture = scottish}} every_province = { limit = { any_neighbor_province = { owned_by = SCO}} add_core = SCO}}
+}
+IF = { limit = { culture = scottish SCO = { exists = no}} add_core = SCO }
+
+IF = {
+limit = { culture = welsh WLS = { exists = yes }}
+IF = { limit = { WLS = {primary_culture = welsh}} every_province = { limit = { any_neighbor_province = { owned_by = WLS}} add_core = WLS}}
+IF = { limit = { NOT = {WLS = {primary_culture = welsh}} CRN = { exists = no }} add_core = CRN }
+}
+IF = { limit = { culture = welsh WLS = { exists = no}} add_core = WLS }
+
+IF = {
+limit = { culture = breton BRI = { exists = yes }}
+IF = { limit = { BRI = {primary_culture = breton}} every_province = { limit = { any_neighbor_province = { owned_by = BRI}} add_core = BRI}}
+}
+IF = { limit = { culture = breton BRI = { exists = no}} add_core = BRI }
+
+IF = {
+limit = { culture = irish IRE = { exists = yes }}
+IF = { limit = { IRE = {primary_culture = irish}} every_province = { limit = { any_neighbor_province = { owned_by = IRE}} add_core = IRE}}
+IF = { limit = { NOT = {IRE = {primary_culture = irish}} TYR = { exists = no }} add_core = TYR }
+}
+IF = { limit = { culture = irish IRE = { exists = no}} add_core = IRE }
+
+IF = {
+limit = { culture = sicilian SIC = { exists = yes }}
+IF = { limit = { SIC = {primary_culture = sicilian}} every_province = { limit = { any_neighbor_province = { owned_by = SIC}} add_core = SIC}}
+IF = { limit = { NOT = {SIC = {primary_culture = sicilian}} NAP = { exists = no }} add_core = NAP }
+}
+IF = { limit = { culture = sicilian SIC = { exists = no}} add_core = SIC }
+
+IF = {
+limit = { culture = catalan ARA = { exists = yes }}
+IF = { limit = { ARA = {primary_culture = catalan }} every_province = { limit = { any_neighbor_province = { owned_by = ARA}} add_core = ARA}}
+IF = { limit = { NOT = {ARA = {primary_culture = catalan }} CAT = { exists = no }} add_core = CAT }
+}
+IF = { limit = { culture = catalan ARA = { exists = no}} add_core = ARA }
+
+IF = {
+limit = { culture = castillian CAS = { exists = yes }}
+IF = { limit = { CAS = {primary_culture = castillian}} every_province = { limit = { any_neighbor_province = { owned_by = CAS}} add_core = CAS}}
+}
+IF = { limit = { culture = castillian CAS = { exists = no}} add_core = CAS }
+
+IF = {
+limit = { culture = portugese POR = { exists = yes }}
+IF = { limit = { POR = {primary_culture = portugese}} every_province = { limit = { any_neighbor_province = { owned_by = POR}} add_core = POR}}
+}
+IF = { limit = { culture = portugese POR = { exists = no}} add_core = POR }
+
+IF = {
+limit = { culture = cosmopolitan_french ORL = { exists = yes }}
+IF = { limit = { ORL = {primary_culture = cosmopolitan_french}} every_province = { limit = { any_neighbor_province = { owned_by = ORL}} add_core = ORL}}
+IF = { limit = { NOT = {ORL = {primary_culture = cosmopolitan_french}} BOU = { exists = no }} add_core = BOU }
+}
+IF = { limit = { culture = cosmopolitan_french ORL = { exists = no}} add_core = ORL }
+
+IF = {
+limit = { culture = basque NAV = { exists = yes }}
+IF = { limit = { NAV = {primary_culture = basque}} every_province = { limit = { any_neighbor_province = { owned_by = NAV}} add_core = NAV}}
+}
+IF = { limit = { culture = basque NAV = { exists = no}} add_core = NAV }
+
+IF = {
+limit = { culture = finnish FIN = { exists = yes }}
+IF = { limit = { FIN = {primary_culture = finnish}} every_province = { limit = { any_neighbor_province = { owned_by = FIN}} add_core = FIN}}
+}
+IF = { limit = { culture = finnish FIN = { exists = no}} add_core = FIN }
+
+IF = {
+limit = { culture = croatian CRO = { exists = yes }}
+IF = { limit = { CRO = {primary_culture = croatian}} every_province = { limit = { any_neighbor_province = { owned_by = CRO}} add_core = CRO}}
+IF = { limit = { NOT = {CRO = {primary_culture = croatian}} RAG = { exists = no }} add_core = RAG }
+}
+IF = { limit = { culture = croatian CRO = { exists = no}} add_core = CRO }
+
+IF = {
+limit = { culture = serbian SER = { exists = yes }}
+IF = { limit = { SER = {primary_culture = serbian}} every_province = { limit = { any_neighbor_province = { owned_by = SER}} add_core = SER}}
+IF = { limit = { NOT = {SER = {primary_culture = serbian}} BOS = { exists = no }} add_core = BOS }
+}
+IF = { limit = { culture = serbian SER = { exists = no}} add_core = SER }
+
+IF = {
+limit = { culture = bulgarian BUL = { exists = yes }}
+IF = { limit = { BUL = {primary_culture = bulgarian}} every_province = { limit = { any_neighbor_province = { owned_by = BUL}} add_core = BUL}}
+}
+IF = { limit = { culture = bulgarian BUL = { exists = no}} add_core = BUL }
+
+IF = {
+limit = { culture = romanian WAL = { exists = yes }}
+IF = { limit = { WAL = {primary_culture = romanian}} every_province = { limit = { any_neighbor_province = { owned_by = WAL}} add_core = WAL}}
+IF = { limit = { NOT = {WAL = {primary_culture = romanian}} MOL = { exists = no }} add_core = MOL }
+}
+IF = { limit = { culture = romanian WAL = { exists = no}} add_core = WAL }
+
+IF = {
+limit = { culture = sindhi SND = { exists = yes }}
+IF = { limit = { SND = {primary_culture = sindhi}} every_province = { limit = { any_neighbor_province = { owned_by = SND}} add_core = SND}}
+}
+IF = { limit = { culture = sindhi SND = { exists = no}} add_core = SND }
+
+IF = {
+limit = { culture = rajput MER = { exists = yes }}
+IF = { limit = { MER = {primary_culture = rajput}} every_province = { limit = { any_neighbor_province = { owned_by = MER}} add_core = MER}}
+IF = { limit = { NOT = {MER = {primary_culture = rajput}} JAN = { exists = no }} add_core = JAN }
+}
+IF = { limit = { culture = rajput MER = { exists = no}} add_core = MER }
+
+IF = {
+limit = { culture = kannada MYS = { exists = yes }}
+IF = { limit = { MYS = {primary_culture = kannada}} every_province = { limit = { any_neighbor_province = { owned_by = MYS}} add_core = MYS}}
+IF = { limit = { NOT = {MYS = {primary_culture = kannada}} VIJ = { exists = no }} add_core = VIJ }
+}
+IF = { limit = { culture = kannada MYS = { exists = no}} add_core = MYS }
+
+IF = {
+limit = { culture = tamil MAD = { exists = yes }}
+IF = { limit = { MAD = {primary_culture = tamil}} every_province = { limit = { any_neighbor_province = { owned_by = MAD}} add_core = MAD}}
+IF = { limit = { NOT = {MAD = {primary_culture = tamil}} KRK = { exists = no }} add_core = KRK }
+}
+IF = { limit = { culture = tamil MAD = { exists = no}} add_core = MAD }
+
+IF = {
+limit = { culture = telegu GOC = { exists = yes }}
+IF = { limit = { GOC = {primary_culture = telegu}} every_province = { limit = { any_neighbor_province = { owned_by = GOC}} add_core = GOC}}
+IF = { limit = { NOT = {GOC = {primary_culture = telegu}} DEC = { exists = no }} add_core = DEC }
+}
+IF = { limit = { culture = telegu GOC = { exists = no}} add_core = GOC }
+
+IF = {
+limit = { culture = nubian NUB = { exists = yes }}
+IF = { limit = { NUB = {primary_culture = nubian}} every_province = { limit = { any_neighbor_province = { owned_by = NUB}} add_core = NUB}}
+}
+IF = { limit = { culture = nubian NUB = { exists = no}} add_core = NUB }
+
+IF = {
+limit = { culture = ethiopian ETH = { exists = yes }}
+IF = { limit = { ETH = {primary_culture = ethiopian}} every_province = { limit = { any_neighbor_province = { owned_by = ETH}} add_core = ETH}}
+}
+IF = { limit = { culture = ethiopian ETH = { exists = no}} add_core = ETH }
+
+IF = {
+limit = { culture = mali MAL = { exists = yes }}
+IF = { limit = { MAL = {primary_culture = mali}} every_province = { limit = { any_neighbor_province = { owned_by = MAL}} add_core = MAL}}
+IF = { limit = { NOT = {MAL = {primary_culture = mali}} SON = { exists = no }} add_core = SON }
+}
+IF = { limit = { culture = mali MAL = { exists = no}} add_core = MAL }
+
+IF = {
+limit = { culture = norse NRL = { exists = yes }}
+IF = { limit = { NRL = {primary_culture = norse}} every_province = { limit = { any_neighbor_province = { owned_by = NRL}} add_core = NRL}}
+}
+IF = { limit = { culture = norse NRL = { exists = no}} add_core = NRL }
+
+IF = {
+limit = { culture = anglo_saxon AGS = { exists = yes }}
+IF = { limit = { AGS = {primary_culture = anglo_saxon}} every_province = { limit = { any_neighbor_province = { owned_by = AGS}} add_core = AGS}}
+}
+IF = { limit = { culture = anglo_saxon AGS = { exists = no}} add_core = AGS }
+
+IF = {
+limit = { culture = ashkenazi ISR = { exists = yes }}
+every_province = { limit = { any_neighbor_province = { owned_by = ISR}} add_core = ISR}
+}
+IF = { limit = { culture = ashkenazi ISR = { exists = no}} add_core = ISR }
+
+IF = {
+limit = { culture = sephardi ISR = { exists = yes }}
+every_province = { limit = { any_neighbor_province = { owned_by = ISR}} add_core = ISR}
+}
+IF = { limit = { culture = sephardi ISR = { exists = no}} add_core = ISR }
+
+IF = {
+limit = { culture = aquitaine TOU = { exists = yes }}
+IF = { limit = { TOU = {primary_culture = aquitaine}} every_province = { limit = { any_neighbor_province = { owned_by = TOU}} add_core = TOU}}
+}
+IF = { limit = { culture = aquitaine TOU = { exists = no}} add_core = TOU }
+
+IF = {
+limit = { culture = kurdish KRD = { exists = yes }}
+IF = { limit = { KRD = {primary_culture = kurdish}} every_province = { limit = { any_neighbor_province = { owned_by = KRD}} add_core = KRD}}
+}
+IF = { limit = { culture = kurdish KRD = { exists = no}} add_core = KRD }
+
+IF = {
+limit = { culture = lappish SMI = { exists = yes }}
+IF = { limit = { SMI = {primary_culture = lappish}} every_province = { limit = { any_neighbor_province = { owned_by = SMI}} add_core = SMI}}
+}
+IF = { limit = { culture = lappish SMI = { exists = no}} add_core = SMI }
+
+IF = {
+limit = { culture = estonian EST = { exists = yes }}
+IF = { limit = { EST = {primary_culture = estonian}} every_province = { limit = { any_neighbor_province = { owned_by = EST}} add_core = EST}}
+}
+IF = { limit = { culture = estonian EST = { exists = no}} add_core = EST }
+
+IF = {
+limit = { culture = latvian LVA = { exists = yes }}
+IF = { limit = { LVA = {primary_culture = latvian}} every_province = { limit = { any_neighbor_province = { owned_by = LVA}} add_core = LVA}}
+}
+IF = { limit = { culture = latvian LVA = { exists = no}} add_core = LVA }
+}
+}
+}
+option = {
+name = "Keytiumck.3a"
+}
+}
+country_event = {
+Event_id = keytiumck.4
+title = "EVTNAMEkeytiumck4"
+desc = "EVTDESCkeytiumck4"
+fire_only_once = yes
+trigger = {
+has_country_flag = culture_split
+ai = yes
+}
+mean_time_to_happen = {
+days = 1
+}
+immediate = {
+HAN = {
+add_core = 1758
+}
+every_country = {
+limit = {
+num_of_cities = 15
+}
+every_owned_province = {
+limit = { has_owner_culture = no }
+IF = {
+limit = { culture = byelorussian PLT = { exists = yes }}
+IF = { limit = { PLT = {primary_culture = byelorussian}} every_province = { limit = { any_neighbor_province = { owned_by = PLT}} add_core = PLT}}
+}
+IF = { limit = { culture = byelorussian PLT = { exists = no}} add_core = PLT }
+
+IF = {
+limit = { culture = ruthenian UKR = { exists = yes }}
+IF = { limit = { UKR = {primary_culture = ruthenian}} every_province = { limit = { any_neighbor_province = { owned_by = UKR}} add_core = UKR}}
+IF = { limit = { NOT = {UKR = {primary_culture = ruthenian}} RUT = { exists = no }} add_core = RUT }
+}
+IF = { limit = { culture = ruthenian UKR = { exists = no}} add_core = UKR }
+
+IF = {
+limit = { culture = greek GRE = { exists = yes }}
+IF = { limit = { GRE = {primary_culture = greek}} every_province = { limit = { any_neighbor_province = { owned_by = GRE}} add_core = GRE}}
+IF = { limit = { NOT = {GRE = {primary_culture = greek}} ATH = { exists = no }} add_core = ATH }
+}
+IF = { limit = { culture = greek GRE = { exists = no}} add_core = GRE }
+
+IF = {
+limit = { culture = georgian GEO = { exists = yes }}
+IF = { limit = { GEO = {primary_culture = georgian}} every_province = { limit = { any_neighbor_province = { owned_by = GEO}} add_core = GEO}}
+}
+IF = { limit = { culture = georgian GEO = { exists = no}} add_core = GEO }
+
+IF = {
+limit = { culture = armenian ARM = { exists = yes }}
+IF = { limit = { ARM = {primary_culture = armenian}} every_province = { limit = { any_neighbor_province = { owned_by = ARM}} add_core = ARM}}
+}
+IF = { limit = { culture = armenian ARM = { exists = no}} add_core = ARM }
+
+IF = {
+limit = { culture = maghreb_arabic MOR = { exists = yes }}
+IF = { limit = { MOR = {primary_culture = maghreb_arabic}} every_province = { limit = { any_neighbor_province = { owned_by = MOR}} add_core = MOR}}
+}
+IF = { limit = { culture = maghreb_arabic MOR = { exists = no}} add_core = MOR }
+
+IF = {
+limit = { culture = al_suryah_arabic SYR = { exists = yes }}
+IF = { limit = { SYR = {primary_culture = al_suryah_arabic}} every_province = { limit = { any_neighbor_province = { owned_by = SYR}} add_core = SYR}}
+}
+IF = { limit = { culture = al_suryah_arabic SYR = { exists = no}} add_core = SYR }
+
+IF = {
+limit = { culture = andalucian GRA = { exists = yes }}
+IF = { limit = { GRA = {primary_culture = andalucian}} every_province = { limit = { any_neighbor_province = { owned_by = GRA}} add_core = GRA}}
+}
+IF = { limit = { culture = andalucian GRA = { exists = no}} add_core = GRA }
+
+IF = {
+limit = { culture = al_misr_arabic MAM = { exists = yes }}
+IF = { limit = { MAM = {primary_culture = al_misr_arabic}} every_province = { limit = { any_neighbor_province = { owned_by = MAM}} add_core = MAM}}
+IF = { limit = { NOT = {MAM = {primary_culture = al_misr_arabic}} EGY = { exists = no }} add_core = EGY }
+}
+IF = { limit = { culture = al_misr_arabic MAM = { exists = no}} add_core = MAM }
+
+IF = {
+limit = { culture = bedouin_arabic NAJ = { exists = yes }}
+IF = { limit = { NAJ = {primary_culture = bedouin_arabic}} every_province = { limit = { any_neighbor_province = { owned_by = NAJ}} add_core = NAJ}}
+IF = { limit = { NOT = {NAJ = {primary_culture = bedouin_arabic}} ADE = { exists = no }} add_core = ADE }
+}
+IF = { limit = { culture = bedouin_arabic NAJ = { exists = no}} add_core = NAJ }
+
+IF = {
+limit = { culture = berber ALG = { exists = yes }}
+IF = { limit = { ALG = {primary_culture = berber}} every_province = { limit = { any_neighbor_province = { owned_by = ALG}} add_core = ALG}}
+IF = { limit = { NOT = {ALG = {primary_culture = berber}} FEZ = { exists = no }} add_core = FEZ }
+}
+IF = { limit = { culture = berber ALG = { exists = no}} add_core = ALG }
+
+IF = {
+limit = { culture = turkish TUR = { exists = yes }}
+IF = { limit = { TUR = {primary_culture = turkish}} every_province = { limit = { any_neighbor_province = { owned_by = TUR}} add_core = TUR}}
+IF = { limit = { NOT = {TUR = {primary_culture = turkish}} CND = { exists = no }} add_core = CND }
+}
+IF = { limit = { culture = turkish TUR = { exists = no}} add_core = TUR }
+
+IF = {
+limit = { culture = hungarian HUN = { exists = yes }}
+IF = { limit = { HUN = {primary_culture = hungarian}} every_province = { limit = { any_neighbor_province = { owned_by = HUN}} add_core = HUN}}
+IF = { limit = { NOT = {HUN = {primary_culture = hungarian}} TRA = { exists = no }} add_core = TRA }
+}
+IF = { limit = { culture = hungarian HUN = { exists = no}} add_core = HUN }
+
+IF = {
+limit = { culture = persian PER = { exists = yes }}
+IF = { limit = { PER = {primary_culture = persian}} every_province = { limit = { any_neighbor_province = { owned_by = PER}} add_core = PER}}
+}
+IF = { limit = { culture = persian PER = { exists = no}} add_core = PER }
+
+IF = {
+limit = { culture = east_persian KHO = { exists = yes }}
+IF = { limit = { KHO = {primary_culture = east_persian}} every_province = { limit = { any_neighbor_province = { owned_by = KHO}} add_core = KHO}}
+IF = { limit = { NOT = {KHO = {primary_culture = east_persian}} AFG = { exists = no }} add_core = AFG }
+}
+IF = { limit = { culture = east_persian KHO = { exists = no}} add_core = KHO }
+
+IF = {
+limit = { culture = baluchi BAL = { exists = yes }}
+IF = { limit = { BAL = {primary_culture = baluchi}} every_province = { limit = { any_neighbor_province = { owned_by = BAL}} add_core = BAL}}
+}
+IF = { limit = { culture = baluchi BAL = { exists = no}} add_core = BAL }
+
+IF = {
+limit = { culture = turkmeni KHI = { exists = yes }}
+IF = { limit = { KHI = {primary_culture = turkmeni}} every_province = { limit = { any_neighbor_province = { owned_by = KHI}} add_core = KHI}}
+}
+IF = { limit = { culture = turkmeni KHI = { exists = no}} add_core = KHI }
+
+IF = {
+limit = { culture = mongol JAI = { exists = yes }}
+IF = { limit = { JAI = {primary_culture = mongol}} every_province = { limit = { any_neighbor_province = { owned_by = JAI}} add_core = JAI}}
+IF = { limit = { NOT = {JAI = {primary_culture = mongol}} GOL = { exists = no }} add_core = GOL }
+}
+IF = { limit = { culture = mongol JAI = { exists = no}} add_core = JAI }
+
+IF = {
+limit = { culture = kirgiz CHG = { exists = yes }}
+IF = { limit = { CHG = {primary_culture = kirgiz}} every_province = { limit = { any_neighbor_province = { owned_by = CHG}} add_core = CHG}}
+}
+IF = { limit = { culture = kirgiz CHG = { exists = no}} add_core = CHG }
+
+IF = {
+limit = { culture = assamese ASS = { exists = yes }}
+IF = { limit = { ASS = {primary_culture = assamese}} every_province = { limit = { any_neighbor_province = { owned_by = ASS}} add_core = ASS}}
+IF = { limit = { NOT = {ASS = {primary_culture = assamese}} KMT = { exists = no }} add_core = KMT }
+}
+IF = { limit = { culture = assamese ASS = { exists = no}} add_core = ASS }
+
+IF = {
+limit = { culture = bengali BNG = { exists = yes }}
+IF = { limit = { BNG = {primary_culture = bengali}} every_province = { limit = { any_neighbor_province = { owned_by = BNG}} add_core = BNG}}
+IF = { limit = { NOT = {BNG = {primary_culture = bengali}} ARK = { exists = no }} add_core = ARK }
+}
+IF = { limit = { culture = bengali BNG = { exists = no}} add_core = BNG }
+
+IF = {
+limit = { culture = oriya ORI = { exists = yes }}
+IF = { limit = { ORI = {primary_culture = oriya}} every_province = { limit = { any_neighbor_province = { owned_by = ORI}} add_core = ORI}}
+IF = { limit = { NOT = {ORI = {primary_culture = oriya}} GRJ = { exists = no }} add_core = GRJ }
+}
+IF = { limit = { culture = oriya ORI = { exists = no}} add_core = ORI }
+
+IF = {
+limit = { culture = sinhala CEY = { exists = yes }}
+IF = { limit = { CEY = {primary_culture = sinhala}} every_province = { limit = { any_neighbor_province = { owned_by = CEY}} add_core = CEY}}
+}
+IF = { limit = { culture = sinhala CEY = { exists = no}} add_core = CEY }
+
+IF = {
+limit = { culture = avadhi ODH = { exists = yes }}
+IF = { limit = { ODH = {primary_culture = avadhi}} every_province = { limit = { any_neighbor_province = { owned_by = ODH}} add_core = ODH}}
+IF = { limit = { NOT = {ODH = {primary_culture = avadhi}} BND = { exists = no }} add_core = BND }
+}
+IF = { limit = { culture = avadhi ODH = { exists = no}} add_core = ODH }
+
+IF = {
+limit = { culture = panjabi PUN = { exists = yes }}
+IF = { limit = { PUN = {primary_culture = panjabi}} every_province = { limit = { any_neighbor_province = { owned_by = PUN}} add_core = PUN}}
+IF = { limit = { NOT = {PUN = {primary_culture = panjabi}} MUL = { exists = no }} add_core = MUL }
+}
+IF = { limit = { culture = panjabi PUN = { exists = no}} add_core = PUN }
+
+IF = {
+limit = { culture = gujarati GUJ = { exists = yes }}
+IF = { limit = { GUJ = {primary_culture = gujarati}} every_province = { limit = { any_neighbor_province = { owned_by = GUJ}} add_core = GUJ}}
+IF = { limit = { NOT = {GUJ = {primary_culture = gujarati}} BDA = { exists = no }} add_core = BDA }
+}
+IF = { limit = { culture = gujarati GUJ = { exists = no}} add_core = GUJ }
+
+IF = {
+limit = { culture = marathi MAR = { exists = yes }}
+IF = { limit = { MAR = {primary_culture = marathi}} every_province = { limit = { any_neighbor_province = { owned_by = MAR}} add_core = MAR}}
+IF = { limit = { NOT = {MAR = {primary_culture = marathi}} KHD = { exists = no }} add_core = KHD }
+}
+IF = { limit = { culture = marathi MAR = { exists = no}} add_core = MAR }
+
+IF = {
+limit = { culture = lombard LOM = { exists = yes }}
+IF = { limit = { LOM = {primary_culture = lombard}} every_province = { limit = { any_neighbor_province = { owned_by = LOM}} add_core = LOM}}
+IF = { limit = { NOT = {LOM = {primary_culture = lombard}} MLO = { exists = no }} add_core = MLO }
+}
+IF = { limit = { culture = lombard LOM = { exists = no}} add_core = LOM }
+
+IF = {
+limit = { culture = alan ALA = { exists = yes }}
+IF = { limit = { ALA = {primary_culture = alan}} every_province = { limit = { any_neighbor_province = { owned_by = ALA}} add_core = ALA}}
+}
+IF = { limit = { culture = alan ALA = { exists = no}} add_core = ALA }
+
+IF = {
+limit = { culture = khanty YUG = { exists = yes }}
+IF = { limit = { YUG = {primary_culture = khanty}} every_province = { limit = { any_neighbor_province = { owned_by = YUG}} add_core = YUG}}
+}
+IF = { limit = { culture = khanty YUG = { exists = no}} add_core = YUG }
+
+IF = {
+limit = { culture = samoyed SAM = { exists = yes }}
+IF = { limit = { SAM = {primary_culture = samoyed}} every_province = { limit = { any_neighbor_province = { owned_by = SAM}} add_core = SAM}}
+}
+IF = { limit = { culture = samoyed SAM = { exists = no}} add_core = SAM }
+
+IF = {
+limit = { culture = pecheneg PEC = { exists = yes }}
+IF = { limit = { PEC = {primary_culture = pecheneg}} every_province = { limit = { any_neighbor_province = { owned_by = PEC}} add_core = PEC}}
+}
+IF = { limit = { culture = pecheneg PEC = { exists = no}} add_core = PEC }
+
+IF = {
+limit = { culture = cuman CUA = { exists = yes }}
+IF = { limit = { CUA = {primary_culture = cuman}} every_province = { limit = { any_neighbor_province = { owned_by = CUA}} add_core = CUA}}
+}
+IF = { limit = { culture = cuman CUA = { exists = no}} add_core = CUA }
+
+IF = {
+limit = { culture = khazar KHZ = { exists = yes }}
+IF = { limit = { KHZ = {primary_culture = khazar}} every_province = { limit = { any_neighbor_province = { owned_by = KHZ}} add_core = KHZ}}
+}
+IF = { limit = { culture = khazar KHZ = { exists = no}} add_core = KHZ }
+
+IF = {
+limit = { culture = karluk ZHE = { exists = yes }}
+IF = { limit = { ZHE = {primary_culture = karluk}} every_province = { limit = { any_neighbor_province = { owned_by = ZHE}} add_core = ZHE}}
+}
+IF = { limit = { culture = karluk ZHE = { exists = no}} add_core = ZHE }
+
+IF = {
+limit = { culture = mordvin MOV = { exists = yes }}
+IF = { limit = { MOV = {primary_culture = mordvin}} every_province = { limit = { any_neighbor_province = { owned_by = MOV}} add_core = MOV}}
+}
+IF = { limit = { culture = mordvin MOV = { exists = no}} add_core = MOV }
+
+IF = {
+limit = { culture = komi PRM = { exists = yes }}
+IF = { limit = { PRM = {primary_culture = komi}} every_province = { limit = { any_neighbor_province = { owned_by = PRM}} add_core = PRM}}
+}
+IF = { limit = { culture = komi PRM = { exists = no}} add_core = PRM }
+
+IF = {
+limit = { culture = normand NRM = { exists = yes }}
+IF = { limit = { NRM = {primary_culture = normand}} every_province = { limit = { any_neighbor_province = { owned_by = NRM}} add_core = NRM}}
+}
+IF = { limit = { culture = normand NRM = { exists = no}} add_core = NRM }
+
+IF = {
+limit = { culture = roman ROM = { exists = yes }}
+IF = { limit = { ROM = {primary_culture = roman}} every_province = { limit = { any_neighbor_province = { owned_by = ROM}} add_core = ROM}}
+}
+IF = { limit = { culture = roman ROM = { exists = no}} add_core = ROM }
+
+IF = {
+limit = { culture = lithuanian LIT = { exists = yes }}
+IF = { limit = { LIT = {primary_culture = lithuanian}} every_province = { limit = { any_neighbor_province = { owned_by = LIT}} add_core = LIT}}
+}
+IF = { limit = { culture = lithuanian LIT = { exists = no}} add_core = LIT }
+
+IF = {
+limit = { culture = old_prussian KUR = { exists = yes }}
+IF = { limit = { KUR = {primary_culture = old_prussian}} every_province = { limit = { any_neighbor_province = { owned_by = KUR}} add_core = KUR}}
+}
+IF = { limit = { culture = old_prussian KUR = { exists = no}} add_core = KUR }
+
+IF = {
+limit = { culture = bolghar KAZ = { exists = yes }}
+IF = { limit = { KAZ = {primary_culture = bolghar}} every_province = { limit = { any_neighbor_province = { owned_by = KAZ}} add_core = KAZ}}
+IF = { limit = { NOT = {KAZ = {primary_culture = bolghar}} NOG = { exists = no }} add_core = NOG }
+}
+IF = { limit = { culture = bolghar KAZ = { exists = no}} add_core = KAZ }
+
+IF = {
+limit = { culture = avar AVA = { exists = yes }}
+IF = { limit = { AVA = {primary_culture = avar}} every_province = { limit = { any_neighbor_province = { owned_by = AVA}} add_core = AVA}}
+}
+IF = { limit = { culture = avar AVA = { exists = no}} add_core = AVA }
+
+IF = {
+limit = { culture = wallonian HAI = { exists = yes }}
+IF = { limit = { HAI = {primary_culture = wallonian}} every_province = { limit = { any_neighbor_province = { owned_by = HAI}} add_core = HAI}}
+IF = { limit = { NOT = {HAI = {primary_culture = wallonian}} LUX = { exists = no }} add_core = LUX LUX = { add_core = 94 }}
+}
+IF = { limit = { culture = wallonian HAI = { exists = no}} add_core = HAI }
+
+IF = {
+limit = { region = helvetia culture = rheinlaender SWI = { exists = yes }}
+IF = { limit = { SWI = {primary_culture = rheinlaender}} every_province = { limit = { any_neighbor_province = { owned_by = SWI}} add_core = SWI}}
+IF = { limit = { NOT = {SWI = {primary_culture = rheinlaender}} BAD = { exists = no }} add_core = BAD }
+}
+IF = { limit = { region = helvetia culture = rheinlaender SWI = { exists = no}} add_core = SWI }
+
+IF = {
+limit = { NOT = {region = helvetia} culture = rheinlaender PAL = { exists = yes }}
+IF = { limit = { PAL = {primary_culture = rheinlaender}} every_province = { limit = { any_neighbor_province = { owned_by = PAL}} add_core = PAL}}
+IF = { limit = { NOT = {PAL = {primary_culture = rheinlaender}} BAD = { exists = no }} add_core = BAD }
+}
+IF = { limit = { NOT = {region = helvetia} culture = rheinlaender PAL = { exists = no}} add_core = PAL }
+
+IF = {
+limit = { RUS = { exist = no} culture = russian MOS = { exists = yes }}
+IF = { limit = { MOS = {primary_culture = russian}} every_province = { limit = { any_neighbor_province = { owned_by = MOS}} add_core = MOS}}
+IF = { limit = { NOT = {MOS = {primary_culture = russian}} RYA = { exists = no }} add_core = RYA }
+}
+IF = {
+limit = { RUS = { exist = yes} culture = russian }
+IF = { limit = { RUS = {primary_culture = russian}} every_province = { limit = { any_neighbor_province = { owned_by = RUS}} add_core = RUS}}
+IF = { limit = { NOT = {RUS = {primary_culture = russian}} MOS = { exists = no }} add_core = MOS MOS = {add_core = 295 }}
+}
+IF = { limit = { culture = russian RUS = { exists = no} MOS = { exists = no}} add_core = MOS MOS = {add_core = 295 }}
+
+IF = {
+limit = { culture = umbrian PAP = { exists = yes }}
+IF = { limit = { PAP = {primary_culture = umbrian}} every_province = { limit = { any_neighbor_province = { owned_by = PAP}} add_core = PAP}}
+IF = { limit = { NOT = {PAP = {primary_culture = umbrian}} URB = { exists = no }} add_core = URB }
+}
+IF = { limit = { culture = umbrian PAP = { exists = no}} add_core = PAP }
+IF = { limit = { NOT = { owned_by = PAP} is_core = PAP NOT = { religion = catholic }} remove_core = PAP add_core = URB }
+
+}
+}
+}
+option = {
+name = "Keytiumck.4a"
+}
+}

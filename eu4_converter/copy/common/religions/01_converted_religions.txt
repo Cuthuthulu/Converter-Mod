@@ -1,0 +1,381 @@
+pagan = {
+	west_african_pagan_reformed = {
+		icon = 17
+		color = { 91 49 13 }
+		country = {
+			tolerance_own = 1
+			tolerance_heretic = -1
+		}
+		
+		heretic = { OLD_WEST_AFRICAN }
+	}
+	baltic_pagan_reformed = {
+		icon = 18
+		color = { 0.75 0.5 0.35 }
+		country = {
+			defensiveness = 0.1
+			tolerance_heretic = 1
+		}
+		
+		heretic = { OLD_ROMUVA }	
+	}
+	finnish_pagan_reformed = {
+		icon = 19
+		color = { 0.65 0.65 0.1 }
+		country = {
+			defensiveness = 0.1
+			tolerance_heretic = 1
+		}
+		
+		heretic = { OLD_SUOMENUSKO }	
+	}
+	slavic_pagan_reformed = {
+		icon = 20
+		color = { 0.85 0.73 0.4 }
+		country = {
+			defensiveness = 0.1
+			tolerance_heretic = 1
+		}
+
+		#personal_deity = yes
+		
+		heretic = { OLD_SLAVIC }	
+	}
+	norse_pagan_reformed = {
+		icon = 21
+		color = { 0.75 0.75 0.75 }
+		country = {
+			land_forcelimit_modifier = 0.10
+			naval_forcelimit_modifier = 0.10
+		}
+		
+		#personal_deity = yes
+		
+		heretic = { OLD_NORSE }	
+	}
+	tengri_pagan_reformed = {
+		icon = 22
+		color = { 0.1 0.3 0.85 }
+		country = {
+			heir_chance = 0.5
+			stability_cost_modifier = -0.10
+		}
+		heretic = { OLD_TENGRI }
+	}
+	aztec_reformed = {
+		icon = 23
+		color = { 0.95 0.3 0.3 }
+		country = {
+			land_morale = 0.15
+			global_revolt_risk = -1
+		}
+		
+		heretic = { OLD_AZTEC }	
+	}
+	inca_reformed = {
+		icon = 24
+		color = { 0.45 0.3 0.1 }
+		country = {
+			global_tax_modifier = 0.10
+			tolerance_own = 1
+		}
+		
+		heretic = { OLD_INCA }	
+	}
+}
+
+persian_group = {
+	zoroastrian = {
+		icon = 25
+		color = { 0.5 0.7 0.2 }
+		country = {
+			tolerance_own = 1
+			heir_chance = 0.5
+		}
+		
+		heretic = { MAZDAKI ZURVANISM }	
+	}
+	manichean = {
+		icon = 36
+		color = { 0.7 0.7 0.4 }
+		country = {
+			tolerance_own = 1
+			heir_chance = 0.5
+		}
+	}
+	mazdaki = {
+		icon = 51
+		color = { 0.3 0.65 0.25 }
+		country = {
+			tolerance_own = 1
+			heir_chance = 0.5
+		}
+		date = 2015.1.1
+	}
+	yazidi = {
+		color = { 0.2 0.2 0.7 }
+		icon = 52
+		country = {
+			tolerance_own = 1
+			heir_chance = 1.0
+		}
+		province = {
+			local_missionary_strength = -0.02
+		}
+		uses_piety = yes				# Uses piety mechanics
+		date = 2015.1.1
+	}
+}
+
+pagan = {
+	hellenic_pagan = {
+		icon = 26
+		color = { 0.6 0.1 0.1 }
+		country = {
+			tolerance_own = 1
+			tolerance_heretic = -1
+		}
+
+		personal_deity = yes
+		
+		heretic = { GOAT_SKULL }	
+	}
+}
+
+jewish_group = {
+	jewish = {
+		icon = 27
+		color = { 0.6 0.1 0.1 }
+		country = {
+			tolerance_own = 1
+			tolerance_heathens = -1
+		}
+		
+		heretic = { SAMARITAN KARAITE }
+	}
+	samaritan = {
+		icon = 53
+		color = { 0.1 0.8 0.8 }
+		country = {
+			tolerance_own = 1
+			tolerance_heathens = -1
+		}
+		date = 2015.1.1
+	}
+	karaite = {
+		icon = 54
+		color = { 0.1 0.5 0.9 }
+		country = {
+			tolerance_own = 1
+			tolerance_heathens = -1
+		}
+		date = 2015.1.1
+	}
+}
+
+dharmic = {
+	jain = {
+		icon = 28
+		color = { 1.2 0.3 0.6 }
+		country = {
+			tolerance_own = 1
+			tolerance_heathens = -1
+		}
+		
+		heretic = { TERAPANTHA }
+	}
+}
+christian = {
+	nestorian = {
+		color = { 0.7 0.7 0.1 }
+		icon = 35
+		country = {
+			defensiveness = 0.1
+			tolerance_heathen = 1
+		}
+		province = {
+			local_missionary_strength = -0.01
+		}
+		
+		heretic = { MESSILIANS }
+		
+		misguided_heretic = yes		# Other christians hate them less (?)
+	}
+	cathar = {
+		color = { 0.5 0.5 0.9 }
+		icon = 38
+		allowed_conversion = {
+			reformed
+			catholic
+			protestant
+		}
+		country = {
+			global_tax_modifier = 0.1
+			idea_cost = -0.1
+		}
+		date = 2015.1.1
+	}
+	 fraticelli = {
+		color = { 0.7 0.7 0.4 }
+		icon = 39
+		allowed_conversion = {
+			reformed
+			catholic
+			protestant
+		}
+		country = {
+			global_tax_modifier = 0.1
+			idea_cost = -0.1
+		}
+		date = 2015.1.1
+	}
+	 waldensian = {
+		color = { 0.4 0.4 0.7 }
+		icon = 40
+		allowed_conversion = {
+			reformed
+			catholic
+			protestant
+		}
+		country = {
+			global_tax_modifier = 0.1
+			idea_cost = -0.1
+		}
+		date = 2015.1.1
+	}
+	 lollard = {
+		color = { 0.5 0.8 0.8 }
+		icon = 41
+		allowed_conversion = {
+			reformed
+			catholic
+			protestant
+		}
+		country = {
+			global_tax_modifier = 0.1
+			idea_cost = -0.1
+		}
+		date = 2015.1.1
+	}
+	monophysite = {
+		color = { 0.8 0.4 0.1}
+		icon = 42
+		country = {
+			defensiveness = 0.1
+			tolerance_own = 2
+		}
+		province = {
+			local_missionary_strength = -0.02
+		}
+		date = 2015.1.1
+		}
+	bogomilist = {
+		color = { 0.7 0 0.2 }
+		icon = 43
+		country = {
+			stability_cost_modifier = -0.1
+			tolerance_own = 1
+		}
+		province = {
+			local_missionary_strength = -0.01
+		}
+		has_patriarchs = yes		# Uses patriarch authority
+		date = 2015.1.1
+	}
+	monothelite = {
+		color = { 0.5 0 0.3 }
+		icon = 44
+		country = {
+			stability_cost_modifier = -0.1
+			tolerance_own = 1
+		}
+		province = {
+			local_missionary_strength = -0.01
+		}
+		has_patriarchs = yes		# Uses patriarch authority
+		date = 2015.1.1
+	}
+	iconoclast = {
+		color = { 0.5 0.2 0.4 }
+		icon = 45
+		country = {
+			stability_cost_modifier = -0.1
+			tolerance_own = 1
+		}
+		province = {
+			local_missionary_strength = -0.01
+		}
+		has_patriarchs = yes		# Uses patriarch authority
+		date = 2015.1.1
+	}
+	paulician = {
+		color = { 0.5 0 0.3 }
+		icon = 46
+		country = {
+			stability_cost_modifier = -0.1
+			tolerance_own = 1
+		}
+		province = {
+			local_missionary_strength = -0.01
+		}
+		has_patriarchs = yes		# Uses patriarch authority
+		date = 2015.1.1
+	}
+	messalian = {
+		color = { 0.6 0.1 0.4 }
+		icon = 47
+		country = {
+			defensiveness = 0.1
+			tolerance_heathen = 1
+		}
+		province = {
+			local_missionary_strength = -0.01
+		}
+		date = 2015.1.1
+	}
+}
+muslim = {
+	zikri = {
+		color = { 0.2 0.6 0.2 }
+		icon = 48
+		country = {
+			tolerance_own = 1
+			heir_chance = 1.0
+		}
+		province = {
+			local_missionary_strength = -0.02
+		}
+		uses_piety = yes				# Uses piety mechanics
+		date = 2015.1.1
+	}
+	druze = {
+		color = { 0.0 0.9 0.4 }
+		icon = 49
+		country = {
+			heir_chance = 1.0
+			land_morale = 0.1
+		}
+		province = {
+			local_missionary_strength = -0.02
+		}
+		uses_piety = yes				# Uses piety mechanics
+		date = 2015.1.1
+	}
+	hurufi = {
+		graphical_culture = muslimgfx
+
+		icon = 50
+		heresy_icon = 9
+		
+		color = { 0 0.8 0 }
+		parent = shiite
+
+		crusade_name = JIHAD
+
+		priests_can_marry = yes
+		can_hold_temples = yes
+		psc_marriage = no
+		max_wives = 4
+		matrilineal_marriages = no
+	}
+}

@@ -1,0 +1,6 @@
+byzantine = {
+	alan = {
+		primary = ALA
+		dynasty_names = $alan$
+	}
+}

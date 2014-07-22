@@ -1,0 +1,6 @@
+scandinavian = {
+	norse = {
+		primary = NRL
+		dynasty_names = $norse$
+	}
+}

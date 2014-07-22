@@ -1,0 +1,7 @@
+# Zhetysu
+government = steppe_horde
+mercantilism = 0.1
+technology_group = nomad_group
+primary_culture = karluk
+religion = buddhism
+capital = 153

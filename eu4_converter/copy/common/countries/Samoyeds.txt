@@ -1,0 +1,74 @@
+# Samoyeds
+graphical_culture = easterngfx
+color = { 35 140 140 }
+historical_idea_groups = {
+	influence_ideas
+	quality_ideas
+	administrative_ideas
+	defensive_ideas
+	trade_ideas
+	humanist_ideas
+	aristocracy_ideas
+	diplomatic_ideas
+}
+
+historical_units = {	
+	bardiche_infantry	
+	eastern_knights	
+	slavic_stradioti	
+	eastern_militia	
+	muscovite_musketeer	
+	muscovite_caracolle	
+	muscovite_soldaty
+	muscovite_cossack	
+	russian_petrine	
+	russian_lancer	
+	russian_green_coat	
+	russian_cuirassier	
+	eastern_skirmisher	
+	eastern_uhlan	
+	eastern_carabinier	
+	russian_mass
+}
+
+leader_names = {
+
+	"Sarak" "Samatu" "Pudak" "Mandak" "Alik" "Hasaba" "Kako" "Kharuchi" "Kolik" "Nabtiko" 
+	"Nenyts" "Nga" "Ngënoh" "Noumea" "Num" "Nyalku" "Panay" "Salinder" "Sirtya" "Somatu" 
+	"Syudbya" "Tatva" "Tolik" "Vesei" "Wayngachi" "Xëryuchi" "Yadne" "Yapti" "Yar" "Yavlad" 
+	"Yurak" }
+
+monarch_names = {
+	"Sarak #1" = 4
+	"Samatu #0" = 4
+	"Pudak #0" = 4
+	"Mandak #0" = 4
+	"Alik #0" = 0
+	"Hasaba #0" = 0
+	"Kako #0" = 0
+	"Kharuchi #0" = 0
+	"Kolik #0" = 0
+	"Nabtiko #0" = 0
+	"Nenyts #0" = 0
+	"Nga #0" = 0
+	"Ngënoh #0" = 0
+	"Noumea #0" = 0
+	"Num #0" = 0
+	"Nyalku #0" = 0
+	"Panay #0" = 0
+	"Salinder #0" = 0
+	"Sirtya #0" = 0
+	"Somatu #0" = 0
+	"Syudbya #0" = 0
+	"Tatva #0" = 0
+	"Tolik #0" = 0
+	"Vesei #0" = 0
+	"Wayngachi #0" = 0
+	"Xëryuchi #0" = 0
+	"Yadne #0" = 0
+	"Yapti #0" = 0
+	"Yar #0" = 0
+	"Yavlad #0" = 0
+	"Yurak #0" = 0
+}
+

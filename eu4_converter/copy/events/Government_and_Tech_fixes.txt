@@ -1,0 +1,269 @@
+# Tech Group Fixes
+country_event = {
+	id = rageair_fix.01
+	title = "rageair_fix.01.TITLE"
+	desc = "rageair_fix.01.DESC"
+	fire_only_once = yes	
+	trigger = {
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+		
+	immediate = {
+		# Sub-Saharan
+		every_country  = {
+			limit = {
+				NOT = { technology_group = sub_saharan }
+				NOT = { num_of_cities = 40 }
+				OR = {
+					capital = 1120
+					capital = 1121
+					capital = 1123
+					capital = 1124
+					capital = 1127
+					capital = 1128
+					capital = 1129
+					capital = 1130
+					capital = 1131
+					capital = 1133
+					capital = 1134
+					capital = 1135
+					capital = 1136
+					capital = 1142
+					capital = 1208
+					capital = 1209
+					capital = 1210
+					capital = 1211
+					capital = 1212
+					capital = 1213
+					capital = 1214
+					capital = 1215
+					capital = 1218
+					capital = 1220
+					capital = 1222
+					capital = 1223
+					capital = 1224
+					capital = 1225
+					capital = 1226
+					capital = 1227
+					capital = 1228
+					capital = 1229
+					capital = 1230				
+				}
+			}
+			change_technology_group = sub_saharan
+			change_unit_type = sub_saharan
+		}
+		# Indian
+		every_country  = {
+					limit = {
+						NOT = { technology_group = indian }
+						capital_scope = { region = indian_region }
+					}
+					change_technology_group = indian
+					change_unit_type = indian
+				}	
+		# Indian to muslim outside India & Persia
+		every_country  = {
+					limit = {
+						technology_group = indian
+						NOT = { capital_scope = { region = indian_region } }
+						NOT = { capital_scope = { region = persian_region } }
+					}
+					change_technology_group = muslim
+					change_unit_type = muslim
+				}	
+		# Chinese to Nomad (only happens with Tengri)
+		every_country  = {
+					limit = {
+						technology_group = chinese
+						OR = {
+							capital_scope = { continent = europe }
+							capital_scope = { continent = africa }
+							capital_scope = { region = central_asia }
+							capital_scope = { region = western_siberia }
+							capital_scope = { region = middle_east }
+							capital_scope = { region = persian_region }
+							capital_scope = { region = indian_region }
+						}
+					}
+					change_government = steppe_horde
+					change_unit_type = nomad_group
+					change_technology_group = nomad_group
+				}	
+		# Western to Eastern if far outside Central Europe (based on EU4 standards)
+		every_country  = {
+					limit = {
+						technology_group = western
+						NOT = { num_of_cities = 50 }
+						NOT = { 
+							capital_scope = { region = iberian_peninsula }
+							capital_scope = { region = british_isles }
+							capital_scope = { region = french_region }
+							capital_scope = { region = italian_region }
+							capital_scope = { region = the_low_countries }
+							capital_scope = { region = german_region }
+							capital_scope = { region = scandinavian_region }
+							capital_scope = { region = shetland_and_faroarna }
+							capital_scope = { region = icelandic_region }
+							capital_scope = { region = bohemian_region }
+							capital_scope = { region = the_baltics }
+							capital_scope = { region = wielkopolska }
+						}
+					}
+					change_technology_group = eastern
+					change_unit_type = eastern
+				}
+		# Eastern to Western if in Central Europe (based on EU4 standards)
+		every_country  = {
+					limit = {
+						technology_group = eastern
+						OR = { 
+							capital_scope = { region = iberian_peninsula }
+							capital_scope = { region = british_isles }
+							capital_scope = { region = french_region }
+							capital_scope = { region = italian_region }
+							capital_scope = { region = the_low_countries }
+							capital_scope = { region = german_region }
+							capital_scope = { region = scandinavian_region }
+							capital_scope = { region = shetland_and_faroarna }
+							capital_scope = { region = icelandic_region }
+							capital_scope = { region = bohemian_region }
+							AND = {
+								capital_scope = { region = the_baltics }
+								OR = {
+									NOT = { culture_group = east_slavic }
+									NOT = { culture_group = altaic }
+									NOT = { culture_group = finno_ugric }
+									NOT = { culture_group = baltic }
+								}
+							}
+							capital_scope = { region = wielkopolska }
+						}
+					}
+					change_technology_group = western
+					change_unit_type = western
+				}
+		# Muslim to Ottoman if within Central Europe OR Greece/Anatolia and sufficiently large
+		every_country  = {
+					limit = {
+						technology_group = muslim
+						num_of_cities = 4
+						OR = { 
+							capital_scope = { region = iberian_peninsula }
+							capital_scope = { region = british_isles }
+							capital_scope = { region = french_region }
+							capital_scope = { region = italian_region }
+							capital_scope = { region = the_low_countries }
+							capital_scope = { region = german_region }
+							capital_scope = { region = scandinavian_region }
+							capital_scope = { region = shetland_and_faroarna }
+							capital_scope = { region = icelandic_region }
+							capital_scope = { region = bohemian_region }
+							capital_scope = { region = the_baltics }
+							capital_scope = { region = wielkopolska }
+							capital_scope = { region = malopolska }
+							capital_scope = { region = hungarian_region }
+							capital_scope = { region = western_balkans }
+							capital_scope = { region = eastern_balkans }
+							capital_scope = { region = anatolia }
+							capital_scope = { region = turkey }
+						}
+					}
+					change_technology_group = ottoman
+					change_unit_type = ottoman
+				}				
+	}
+	
+	option = {
+		name = "rageair_fix.01.OPT"
+	}
+}
+
+# Government Fixes
+country_event = {
+	id = rageair_fix.02
+	title = "rageair_fix.02.TITLE"
+	desc = "rageair_fix.02.DESC"
+	fire_only_once = yes	
+	trigger = {
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 1
+	}	
+	immediate = {
+		 #If you have Nomad tech, you get to be a Steppe Horde.
+		 every_country  = {
+			limit = {
+				OR = {
+						AND = {
+							NOT = { government = steppe_horde }
+							technology_group = nomad_group
+						}
+						AND = {
+							NOT = { technology_group = western }
+							NOT = { technology_group = ottoman }
+							culture_group = altaic
+							NOT = { religion_group = christian }
+							NOT = { num_of_unions = 1 }
+							OR = {
+								capital_scope = { region = russian_region }
+								capital_scope = { region = central_asia }
+								capital_scope = { region = western_siberia }
+							}
+						}
+					}
+			}
+			change_government = steppe_horde
+			change_unit_type = nomad_group
+			change_technology_group = nomad_group
+		}
+		#Christians in the Nomad Group get to be Muslim tech and a Tribal Despotism. 
+		every_country  = {
+			limit = {
+				AND = {
+					religion_group = christian
+					technology_group = nomad_group
+					NOT = { government = imperial_government }
+					NOT = { government = merchant_republic }
+					NOT = { government = oligarchic_republic }
+					NOT = { government = noble_republic }
+				}
+			}
+			change_government = tribal_despotism
+			change_unit_type = muslim
+			change_technology_group = muslim
+		}
+		#Christians in the Nomad Group that are either an Imperium or a Republic get to be Muslim tech.
+		every_country  = {
+			limit = {
+				AND = {
+					religion_group = christian
+					technology_group = nomad_group
+					OR = {
+						government = imperial_government
+						government = merchant_republic 
+						government = oligarchic_republic 
+						government = noble_republic
+					}
+				}
+			}
+			change_unit_type = muslim
+			change_technology_group = muslim
+		}
+		#The current HRE emperor becomes an Archduchy.
+		every_country  = {
+			limit = {
+				is_emperor = yes
+			}
+			change_government = archduchy
+		}
+	}
+	
+	option = {
+		name = "rageair_fix.02.OPT"
+	}
+}

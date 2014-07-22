@@ -1,0 +1,7 @@
+# Khazaria
+government = steppe_horde
+mercantilism = 0.1
+technology_group = nomad_group
+primary_culture = khazar
+religion = jewish
+capital = 153

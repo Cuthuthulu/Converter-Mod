@@ -1,0 +1,114 @@
+# Mordvins
+graphical_culture = easterngfx
+color = { 148 165 45 }
+historical_idea_groups = {
+	influence_ideas
+	quality_ideas
+	administrative_ideas
+	defensive_ideas
+	trade_ideas
+	humanist_ideas
+	aristocracy_ideas
+	diplomatic_ideas
+}
+
+historical_units = {	
+	bardiche_infantry	
+	eastern_knights	
+	slavic_stradioti	
+	eastern_militia	
+	muscovite_musketeer	
+	muscovite_caracolle	
+	muscovite_soldaty
+	muscovite_cossack	
+	russian_petrine	
+	russian_lancer	
+	russian_green_coat	
+	russian_cuirassier	
+	eastern_skirmisher	
+	eastern_uhlan	
+	eastern_carabinier	
+	russian_mass
+}
+
+leader_names = {
+
+	"Purginepaz" "Chipaz" "Varmanpaz" "Mastorpaz" "Andyamo" "Chichayka" "Chumbulat" "Dergun" "Deryab" "Dobrinya" 
+	"Erziya" "Inzhay" "Kezhapa" "Kezhay" "Kezhedey" "Kezhevat" "Kichay" "Kubrat" "Malyaka" "Malyy" 
+	"Meltsayka" "Mordvinko" "Moksha" "Nalka" "Nuyaksha" "Nuyanza" "Nuyat" "Ovtay" "Pakstyan" "Paksyay" 
+	"Paksyut" "Parush" "Pivtsay" "Pokshayka" "Putyayka" "Setyamka" "Shindyay" "Shoksha" "Syrka" "Tikshayka" 
+	"Tyueykezhut" "Uchva" "Varaka" "Vechkas" "Velmayka" "Virdyan" "Viryas" "Viryay" "Atyamas" "Azyren" 
+	"Kardaz" "Kinyak" "Koshel" "Murunza" "Naruchad" "Nishkepaz" "Orunza" "Puresh" "Purysho" "Saksa" 
+	"Shkay" "Surt" "Tul" "Tunya" "Tutyra" "Tylmache" "Tylze" "Tyushten" "Tyushtya" "Uzhara" }
+monarch_names = {
+	"Purginepaz #0" = 8
+	"Chipaz #0" = 8
+	"Varmanpaz #0" = 8
+	"Mastorpaz #0" = 8
+	"Andyamo #0" = 0
+	"Chichayka #0" = 0
+	"Chumbulat #0" = 0
+	"Dergun #0" = 0
+	"Deryab #0" = 0
+	"Dobrinya #0" = 0
+	"Erziya #0" = 0
+	"Inzhay #0" = 0
+	"Kezhapa #0" = 0
+	"Kezhay #0" = 0
+	"Kezhedey #0" = 0
+	"Kezhevat #0" = 0
+	"Kichay #0" = 0
+	"Kubrat #0" = 0
+	"Malyaka #0" = 0
+	"Malyy #0" = 0
+	"Meltsayka #0" = 0
+	"Mordvinko #0" = 0
+	"Moksha #0" = 0
+	"Nalka #0" = 0
+	"Nuyaksha #0" = 0
+	"Nuyanza #0" = 0
+	"Nuyat #0" = 0
+	"Ovtay #0" = 0
+	"Pakstyan #0" = 0
+	"Paksyay #0" = 0
+	"Paksyut #0" = 0
+	"Parush #0" = 0
+	"Pivtsay #0" = 0
+	"Pokshayka #0" = 0
+	"Putyayka #0" = 0
+	"Setyamka #0" = 0
+	"Shindyay #0" = 0
+	"Shoksha #0" = 0
+	"Syrka #0" = 0
+	"Tikshayka #0" = 0
+	"Tyueykezhut #0" = 0
+	"Uchva #0" = 0
+	"Varaka #0" = 0
+	"Vechkas #0" = 0
+	"Velmayka #0" = 0
+	"Virdyan #0" = 0
+	"Viryas #0" = 0
+	"Viryay #0" = 0
+	"Atyamas #0" = 0
+	"Azyren #0" = 0
+	"Kardaz #0" = 0
+	"Kinyak #0" = 0
+	"Koshel #0" = 0
+	"Murunza #0" = 0
+	"Naruchad #0" = 0
+	"Nishkepaz #0" = 0
+	"Orunza #0" = 0
+	"Puresh #0" = 0
+	"Purysho #0" = 0
+	"Saksa #0" = 0
+	"Shkay #0" = 0
+	"Surt #0" = 0
+	"Tul #0" = 0
+	"Tunya #0" = 0
+	"Tutyra #0" = 0
+	"Tylmache #0" = 0
+	"Tylze #0" = 0
+	"Tyushten #0" = 0
+	"Tyushtya #0" = 0
+	"Uzhara #0" = 0
+}

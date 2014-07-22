@@ -1,0 +1,83 @@
+# Sápmi
+graphical_culture = easterngfx
+color = { 255 50 100 }
+historical_idea_groups = {
+	influence_ideas
+	quality_ideas
+	administrative_ideas
+	defensive_ideas
+	trade_ideas
+	humanist_ideas
+	aristocracy_ideas
+	diplomatic_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	dutch_maurician
+	swedish_gallop
+	swedish_gustavian
+	swedish_caroline
+	swedish_arme_blanche
+	prussian_frederickian
+	prussian_uhlan
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+leader_names = {
+
+	"Viggu" "Arrajuoksa" "Ággi" "Áigesárri" "Áilu" "Ámmot" "Ára" "Árrajuoksa" "Ásllat" "Èoavvá" 
+	"Ahkemiella" "Algebaeivi" "Baeivi" "Baeivvet" "Biejan" "Bijás" "Bilzi" "Dávgon" "Duttá" "Gáivvas" 
+	"Gáktu" "Henes" "Járre" "Jeansa" "Juvven" "Lágon" "Lávrrohas" "Leammá" "Mellet" "Mihka" 
+	"Mohkku" "Mokci" "Náhkol" "Náinnas" "Njulgu" "Oaván" "Orddot" "Rástos" "Riibma" "Ruigi" 
+	"Sárra" "Speaidna" }
+monarch_names = {
+	"Viggu #1" = 0
+	"Arrajuoksa #0" = 0
+	"Ággi #0" = 0
+	"Áigesárri #0" = 0
+	"Áilu #0" = 0
+	"Ámmot #0" = 0
+	"Ára #0" = 0
+	"Árrajuoksa #0" = 0
+	"Ásllat #0" = 0
+	"Èoavvá #0" = 0
+	"Ahkemiella #0" = 0
+	"Algebaeivi #0" = 0
+	"Baeivi #0" = 0
+	"Baeivvet #0" = 0
+	"Biejan #0" = 0
+	"Bijás #0" = 0
+	"Bilzi #0" = 0
+	"Dávgon #0" = 0
+	"Duttá #0" = 0
+	"Gáivvas #0" = 0
+	"Gáktu #0" = 0
+	"Henes #0" = 0
+	"Járre #0" = 0
+	"Jeansa #0" = 0
+	"Juvven #0" = 0
+	"Lágon #0" = 0
+	"Lávrrohas #0" = 0
+	"Leammá #0" = 0
+	"Mellet #0" = 0
+	"Mihka #0" = 0
+	"Mohkku #0" = 0
+	"Mokci #0" = 0
+	"Náhkol #0" = 0
+	"Náinnas #0" = 0
+	"Njulgu #0" = 0
+	"Oaván #0" = 0
+	"Orddot #0" = 0
+	"Rástos #0" = 0
+	"Riibma #0" = 0
+	"Ruigi #0" = 0
+	"Sárra #0" = 0
+	"Speaidna #0" = 0
+}
+

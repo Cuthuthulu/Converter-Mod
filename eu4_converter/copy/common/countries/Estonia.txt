@@ -1,0 +1,96 @@
+# Estonia
+graphical_culture = easterngfx
+color = { 110 50 50 }
+historical_idea_groups = {	influence_ideas
+	quality_ideas
+	administrative_ideas
+	defensive_ideas
+	trade_ideas
+	humanist_ideas
+	aristocracy_ideas
+	diplomatic_ideas
+}
+
+historical_units = {
+	bardiche_infantry
+	eastern_knights
+	slavic_stradioti
+	eastern_militia
+	hungarian_hussar
+	polish_musketeer
+	polish_hussar
+	polish_tercio
+	polish_winged_hussar
+	russian_lancer
+	russian_cuirassier
+	eastern_skirmisher
+	eastern_uhlan
+	eastern_carabinier
+	russian_mass
+}
+
+leader_names = {
+
+	"Nalka" "Altocumulus" "Andyamo" "Chichayka" "Dergun" "Deryab" "Dobrinya" "Inzhay" "Kezhapa" "Kezhay" 
+	"Kezhedey" "Kezhevat" "Kichay" "Malyaka" "Malyy" "Meltsayka" "Mordvinko" "Nuyaksha" "Nuyanza" "Nuyat" 
+	"Ovtay" "Pakstyan" "Paksyay" "Paksyut" "Parush" "Pivtsay" "Pokshayka" "Putyayka" "Setyamka" "Shindyay" 
+	"Syrka" "Tikshayka" "Tyueykezhut" "Uchva" "Varaka" "Vechkas" "Velmayka" "Virdyan" "Viryas" "Viryay" }
+monarch_names = {
+	"Nalka #1" = 0
+	"Altocumulus #0" = 0
+	"Andyamo #0" = 0
+	"Chichayka #0" = 0
+	"Dergun #0" = 0
+	"Deryab #0" = 0
+	"Dobrinya #0" = 0
+	"Inzhay #0" = 0
+	"Kezhapa #0" = 0
+	"Kezhay #0" = 0
+	"Kezhedey #0" = 0
+	"Kezhevat #0" = 0
+	"Kichay #0" = 0
+	"Malyaka #0" = 0
+	"Malyy #0" = 0
+	"Meltsayka #0" = 0
+	"Mordvinko #0" = 0
+	"Nuyaksha #0" = 0
+	"Nuyanza #0" = 0
+	"Nuyat #0" = 0
+	"Ovtay #0" = 0
+	"Pakstyan #0" = 0
+	"Paksyay #0" = 0
+	"Paksyut #0" = 0
+	"Parush #0" = 0
+	"Pivtsay #0" = 0
+	"Pokshayka #0" = 0
+	"Putyayka #0" = 0
+	"Setyamka #0" = 0
+	"Shindyay #0" = 0
+	"Syrka #0" = 0
+	"Tikshayka #0" = 0
+	"Tyueykezhut #0" = 0
+	"Uchva #0" = 0
+	"Varaka #0" = 0
+	"Vechkas #0" = 0
+	"Velmayka #0" = 0
+	"Virdyan #0" = 0
+	"Viryas #0" = 0
+	"Viryay #0" = 0
+}
+ship_names = {
+	Alytus
+	Birzai
+	Druskininkai
+	Gardinas
+	Jonava
+	Kaunas Kretinga Kreva
+	Lazdijai
+	Naugardukas
+	Palanga
+	Raseiniai
+	Siauliai Sventoji
+	Taurage Telsiai Trakai
+	Utena
+	Vilkmerge
+}
+

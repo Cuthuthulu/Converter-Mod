@@ -1,0 +1,73 @@
+# Cumania
+graphical_culture = muslimgfx
+color = { 231 192 88 }
+historical_idea_groups = {
+	administrative_ideas
+	religious_ideas
+	offensive_ideas
+	trade_ideas
+	defensive_ideas
+	diplomatic_ideas
+	economic_ideas
+	expansion_ideas
+}
+
+historical_units = {
+	mongol_bow
+	mongol_swarm
+	mongol_steppe
+}
+
+leader_names = {
+
+	"Sokal" "Asli" "Sirçan" "Sati" "Çilen" "Blush" "Etrek" "Gzi" "Tura" "Uzluk " 
+	"Çilbu" "Aepak" "Asalup" "Asep" "Atrak" "Bönek" "Bachman" "Begluk" "Bonyak" "Borç" 
+	"Eldeçyuk" "Girgen" "Itlar" "Ituk" "Könçek" "Kobyak" "Kopti" "Kotyan" "Koza" "Kozel" 
+	"Kubasar" "Kuntuvdi" "Kutan" "Pulad" "Saru" "Sevenç" "Sotan" "Sugr" "Törtogul" "Togli" 
+	"Tolun" "Tugor" "Uzluk" "Uzur" }
+monarch_names = {
+	"Sokal #0" = 5
+	"Asli #0" = -6
+	"Sirçan #0" = 5
+	"Sati #0" = -6
+	"Çilen #0" = -6
+	"Blush #0" = 5
+	"Etrek #0" = 5
+	"Gzi #0" = 5
+	"Tura #0" = -6
+	"Uzluk  #0" = 5
+	"Çilbu #0" = 0
+	"Aepak #0" = 0
+	"Asalup #0" = 0
+	"Asep #0" = 0
+	"Atrak #0" = 0
+	"Bönek #0" = 0
+	"Bachman #0" = 0
+	"Begluk #0" = 0
+	"Bonyak #0" = 0
+	"Borç #0" = 0
+	"Eldeçyuk #0" = 0
+	"Girgen #0" = 0
+	"Itlar #0" = 0
+	"Ituk #0" = 0
+	"Könçek #0" = 0
+	"Kobyak #0" = 0
+	"Kopti #0" = 0
+	"Kotyan #0" = 0
+	"Koza #0" = 0
+	"Kozel #0" = 0
+	"Kubasar #0" = 0
+	"Kuntuvdi #0" = 0
+	"Kutan #0" = 0
+	"Pulad #0" = 0
+	"Saru #0" = 0
+	"Sevenç #0" = 0
+	"Sotan #0" = 0
+	"Sugr #0" = 0
+	"Törtogul #0" = 0
+	"Togli #0" = 0
+	"Tolun #0" = 0
+	"Tugor #0" = 0
+	"Uzluk #0" = 0
+	"Uzur #0" = 0
+}

@@ -1,0 +1,7 @@
+# Ruthenia
+government = feudal_monarchy
+mercantilism = 0.1
+technology_group = eastern
+religion = orthodox
+primary_culture = ruthenian
+capital = 280	# Kiev

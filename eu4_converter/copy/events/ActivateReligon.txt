@@ -1,0 +1,28 @@
+namespace = cuthuthulu
+
+country_event = {
+	Event_id = cuthuthulu.1
+	title = "EVTNAMEcuthuthulu1"
+	desc = "EVTDESC1cuthuthulu"
+	fire_only_once = yes	
+	trigger = {
+		ai = yes
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	immediate = {
+		set_country_flag = active_religions
+		#Activate Religions
+		#Tengri
+		all_provinces = {
+			limit = {
+                religion = tengri_pagan_reformed
+        }
+		        enable_religion = tengri_pagan_reformed
+		}
+	}
+	option = {
+		name = "cuthuthulu1.1a"
+	}
+}

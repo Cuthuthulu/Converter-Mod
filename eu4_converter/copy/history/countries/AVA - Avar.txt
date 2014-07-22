@@ -1,0 +1,7 @@
+# Avar
+government = steppe_horde
+mercantilism = 0.1
+technology_group = nomad_group
+primary_culture = avar
+religion = zoroastrian
+capital = 153

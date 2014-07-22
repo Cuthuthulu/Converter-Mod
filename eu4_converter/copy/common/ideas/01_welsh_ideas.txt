@@ -1,0 +1,40 @@
+welsh_ideas = {
+	start = {
+		light_ship_power = 0.1
+	}
+	bonus = {
+		navy_tradition_decay = -0.01
+	}
+	trigger = {
+		AND = {
+			NOT = { is_colonial_nation = yes }
+			OR = {
+					primary_culture = welsh
+			}
+		}
+	}
+	free = yes		#will be added at load.
+	
+	independent = { 
+	 hostile_attrition = 1
+	}
+	
+	cymru = { 
+	   diplomatic_reputation = 2
+	}
+	saints = {
+	 global_missionary_strength = 0.03
+	}
+	king_arthur = {
+	 leader_land_shock = 1
+	}
+	red_dragon = {
+	 land_morale = 0.25
+	}
+	welsh_longbowmen = {
+	 leader_land_fire = 1
+	}
+	celtic_disporia = {
+	 global_colonial_growth = 15
+	}
+}

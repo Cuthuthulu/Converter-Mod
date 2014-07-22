@@ -1,0 +1,91 @@
+# Khazaria
+graphical_culture = muslimgfx
+color = { 250 184 31 }
+historical_idea_groups = {
+	administrative_ideas
+	religious_ideas
+	offensive_ideas
+	trade_ideas
+	defensive_ideas
+	diplomatic_ideas
+	economic_ideas
+	expansion_ideas
+}
+
+historical_units = {
+	mongol_bow
+	mongol_swarm
+	mongol_steppe
+}
+
+leader_names = {
+
+	"Manasseh" "Nisi" "Bulan-Sabriel" "Ezra" "Hezekiah" "Hanukkah" "Zebulun" "Alp" "Araslan" "Bagha" 
+	"Baghatur" "Bälgiçi" "Barjik" "Barsbek" "Bastu" "Bashtwa" "Bihor" "Böri" "Bugha" "Bulan" 
+	"Bulçan" "Busir" "Buzer" "Çat" "Çat'n" "Çorpan" "Ilik" "Iltäbär" "Itakh" "Kamaj" 
+	"Karadakh" "Kayghalagh" "Khatir" "Khuterkin" "Kibar" "Kisa" "Kundaçiq" "Kundaç" "Mänär" "Mänäs" 
+	"Mënümarót" "Ötemis" "Papaçyz" "Samsam" "Sartäç" "Simsam" "Täbär" "Tabghaç" "Tarkhan" "Tarmaç" 
+	"Tuzniq" "Vakrim" "Yabghu" "Yavantey" "Yençepi" "Yerneslu" "Yeçtirek" "Yilig" "Belet" "Yavdi" }
+monarch_names = {
+	"Manasseh #0" = 14
+	"Nisi #0" = 7
+	"Bulan-Sabriel #0" = 7
+	"Ezra #1" = 7
+	"Hezekiah #1" = 7
+	"Hanukkah #1" = 7
+	"Zebulun #1" = 7
+	"Alp #0" = 0
+	"Araslan #0" = 0
+	"Bagha #0" = 0
+	"Baghatur #0" = 0
+	"Bälgiçi #0" = 0
+	"Barjik #0" = 0
+	"Barsbek #0" = 0
+	"Bastu #0" = 0
+	"Bashtwa #0" = 0
+	"Bihor #0" = 0
+	"Böri #0" = 0
+	"Bugha #0" = 0
+	"Bulan #0" = 0
+	"Bulçan #0" = 0
+	"Busir #0" = 0
+	"Buzer #0" = 0
+	"Çat #0" = 0
+	"Çat'n #0" = 0
+	"Çorpan #0" = 0
+	"Ilik #0" = 0
+	"Iltäbär #0" = 0
+	"Itakh #0" = 0
+	"Kamaj #0" = 0
+	"Karadakh #0" = 0
+	"Kayghalagh #0" = 0
+	"Khatir #0" = 0
+	"Khuterkin #0" = 0
+	"Kibar #0" = 0
+	"Kisa #0" = 0
+	"Kundaçiq #0" = 0
+	"Kundaç #0" = 0
+	"Mänär #0" = 0
+	"Mänäs #0" = 0
+	"Mënümarót #0" = 0
+	"Ötemis #0" = 0
+	"Papaçyz #0" = 0
+	"Samsam #0" = 0
+	"Sartäç #0" = 0
+	"Simsam #0" = 0
+	"Täbär #0" = 0
+	"Tabghaç #0" = 0
+	"Tarkhan #0" = 0
+	"Tarmaç #0" = 0
+	"Tuzniq #0" = 0
+	"Vakrim #0" = 0
+	"Yabghu #0" = 0
+	"Yavantey #0" = 0
+	"Yençepi #0" = 0
+	"Yerneslu #0" = 0
+	"Yeçtirek #0" = 0
+	"Yilig #0" = 0
+	"Belet #0" = 0
+	"Yavdi #0" = 0
+}
+

@@ -1,0 +1,7 @@
+# Samoyeds
+government = feudal_monarchy
+mercantilism = 0.1
+technology_group = eastern
+primary_culture = samoyed
+religion = shamanism
+capital = 153

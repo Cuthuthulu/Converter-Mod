@@ -1,0 +1,121 @@
+# These ideas are always loaded first
+
+PAP_ideas = {
+	start = {
+		diplomatic_reputation = 3
+		papal_influence = 5
+	}
+
+	bonus = {
+		discipline = 0.025
+	}
+	
+	trigger = {
+		OR = {
+		TAG = PAP
+		government = papal_government
+		}
+	}
+	free = yes		#will be added at load.
+	
+	ecclesiastical_primacy = {
+		tolerance_own = 2
+	}
+	papal_investiture_and_tithes = {
+		global_tax_modifier = 0.2
+	}
+	glory_of_rome = {
+		prestige = 1
+	}
+	donation_of_constantine = {
+		fabricate_claims_time = -0.2
+	}
+	centralize_the_states = {
+		production_efficiency = 0.1
+	}
+	the_vatican_museums = {
+		prestige_decay = -0.01
+	}
+	holy_father = {
+		ae_impact = -0.10
+	}
+}
+
+colonial_ideas = {
+	start = {
+		inflation_reduction = 0.1
+		republican_tradition = 0.005
+	}
+	
+	bonus = {
+		land_morale = 0.10
+	}
+	
+	trigger = {
+		is_colonial_nation = yes
+	}
+	free = yes
+	
+	founding_fathers = {
+		advisor_cost = -0.33
+	}
+	continental_trade = {	
+		global_prov_trade_power_modifier = 0.25
+	}
+	religious_outposts = {
+		global_missionary_strength = 0.03
+	}
+	free_thinkers = {
+		idea_cost = -0.1
+	}
+	colonial_militia = {
+		global_regiment_cost = -0.1
+	}
+	new_frontiers = {
+		auto_explore_adjacent_to_colony = yes
+		global_colonial_growth = 20
+	}
+	liberty_heroes = {
+		free_leader_pool = 1
+	}
+}
+
+theocracy_ideas = {
+	start = {
+		manpower_recovery_speed = 0.15
+		missionaries = 1
+	}
+	
+	bonus = {
+		culture_conversion_cost = -0.1
+	}
+	
+	trigger = {
+		government = theocracy
+		religion_group = christian
+	}
+	free = yes
+	
+	holy_order = {
+		discipline = 0.05
+	}
+	church_administration = {
+		stability_cost_modifier = -0.10
+		core_creation = -0.10
+	}
+	true_defender_of_the_faith = {
+		defensiveness = 0.25
+	}
+	no_witches = {
+		global_missionary_strength = 0.02
+	}
+	onward_christian_soldiers = {
+		global_garrison_growth = 0.1
+	}
+	turn_the_other_cheek = {
+		hostile_attrition = 1
+	}
+	render_unto_ceasar = {
+		global_tax_modifier = 0.10
+	}
+}
